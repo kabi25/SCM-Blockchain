@@ -89,7 +89,6 @@ contract SupplyChain {
     // Input: party name, location, stage # (starts at 0), wallet address
     function createParty(string memory _name, string memory _location, STAGE _role, address _wallet) public {
         Party storage party = parties[_wallet];
-        // if (party.wallet != 0x0000000000000000000000000000000000000000) return;
         
         partyAddresses.push(_wallet);
 
